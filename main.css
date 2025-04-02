@@ -1,7 +1,8 @@
 :root{
   --acent-color: #10C9C3;
   --primery-color: #212529;
-  ---w-color: #FFFFFF
+  ---w-color: #FFFFFF;
+  --mid-color: #F8F9F9
 }
 
 *{
@@ -24,16 +25,18 @@ width: 94%;
 height: 100%;
 max-width: 1600px;
 margin: auto;
-border: 1px solid black;
 }
 .main {
  height: 100vh;
+ background: url(backgraund.jpg) no-repeat center center / cover;
 }
 .main_wrap {
 display: flex;
 justify-content: end;
 align-items: center;
 height: 100%;
+
+  
 }
 .main_block {
 width: 50%;
@@ -84,7 +87,38 @@ font-weight: 500;
 font-size: 32px;
 line-height: 1.5;
 }
-.about_img{
-border: 1px solid black;
-width: 200px;
+
+.skills{
+background-color: var(--mid-color);
+}
+.skills_wrap{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+.skills_left{
+padding: 100px;
+}
+.skills_heading{
+
+}
+.skills_block{
+
+}
+.skills_item{
+
+}
+.skills_title{
+
+}
+.skills_text{
+
+}
+.skills_percent{
+
+}
+.skills_line{
+
+}
+.skills_level{
+
 }
