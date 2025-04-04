@@ -2,7 +2,10 @@
   --acent-color: #10C9C3;
   --primery-color: #212529;
   ---w-color: #FFFFFF;
-  --mid-color: #F8F9F9
+  --mid-color: #F8F9F9;
+  --heading-size: 36px;
+  --text-size: 12px;
+  --light-color: #E9ECEF
 }
 
 *{
@@ -28,7 +31,7 @@ margin: auto;
 }
 .main {
  height: 100vh;
- background: url(backgraund.jpg) no-repeat center center / cover;
+ background: url("./img/main.jpg") no-repeat center center / cover;
 }
 .main_wrap {
 display: flex;
@@ -48,13 +51,13 @@ gap: 20px;
 }
 .main_heading {
 font-weight: 500;
-font-size: 32px;
+font-size: var(--heading-size);
 color: var(--primery-color);
 }
 .main_text {
 font-family: "Nunito sans", sans-serif;
 font-weight: 400;
-font-size: 16px;
+font-size: var(--text-size);
 }
 .main_button {
    color: var(---w-color);
@@ -80,11 +83,13 @@ gap: 24px;
 }
 .about_text{
 text-align: center;
+font-size: var(--text-size);
 font-family: "Nunito Sans", sans-serif ;
+max-width: 500px;
 }
 .about_heading{
 font-weight: 500;
-font-size: 32px;
+font-size: var(--heading-size);
 line-height: 1.5;
 }
 
@@ -96,29 +101,56 @@ display: grid;
 grid-template-columns: repeat(2, 1fr);
 }
 .skills_left{
-padding: 100px;
+padding: 100px 0;
+display: flex;
+flex-direction: column;
+gap: 2em;
 }
 .skills_heading{
-
+text-transform: capitalize;
+font-size: var(--heading-size);
 }
 .skills_block{
-
+display: flex;
+flex-direction: column;
+gap: 2em;
 }
 .skills_item{
-
+display: flex;
+flex-direction: column;
+gap: 1em;
 }
 .skills_title{
-
+display: flex;
+gap: 2em;;
 }
 .skills_text{
-
+font-size: 12px;
+font-weight: 500;
 }
 .skills_percent{
-
+  font-size: 12px;
+  font-weight: 500;
 }
 .skills_line{
-
+ width: 70%;
+ height: 3px;
+ background-color: var(--light-color);
 }
 .skills_level{
-
+width: 75%;
+background-color: #10C9C3;
+height: 3px;
+}
+#line75{
+  width: 70%
+}
+#line90{
+  width: 90%;
+}
+#line65{
+  width: 65%;
+}
+.skills_right{
+  background: url("img/conv.jpg") no-repeat right center / cover;
 }
