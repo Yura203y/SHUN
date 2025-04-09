@@ -154,3 +154,42 @@ height: 3px;
 .skills_right{
   background: url("img/conv.jpg") no-repeat right center / cover;
 }
+.stats{
+background-color: var(--acent-color);
+
+}
+.stats_wrap{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.stats_block{
+  background-color: var(--acent-color);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+  "icon title"
+  "icon text";
+
+}
+.stats_icon{
+font-size: 32px;
+color: white;
+grid-area: icon;
+}
+.stats_title{
+font-weight: 500;
+font-size: 18px;
+color: white;
+grid-area: title;
+}
+.stats_text{
+font-weight: 500;
+font-size: 12px;
+line-height: 1.5;
+text-transform: uppercase;
+color: white;
+grid-area: text;
+}
